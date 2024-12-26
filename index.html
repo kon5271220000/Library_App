@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Library App</h1>
+    <div class="add-book-form">
+        <h2>Add Book</h2>
+        <form action="get" id="book_info">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <div>
+                <label for="pages">Pages</label>
+                <input type="number" name="pages" id="pages">
+            </div>
+            <div>
+                <label for="read">Have read?</label>
+                <input type="checkbox" name="read" id="read">
+            </div>
+            <button type="submit" id="submit-btn">submit</button>
+        </form>
+    </div>
+    <div class="display-book">
+        <h2>My Library</h2>
+        <table id="data_table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Have Read ?</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
