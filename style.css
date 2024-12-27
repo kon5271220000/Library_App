@@ -11,41 +11,129 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: #e5e7eb;
 }
 
 h1 {
     text-align: center;
-    margin: 20px;
 }
 
 .add-book-form {
     display: grid;
-
-}
-
-.add-book-form form {
-    display: grid;
-    margin: 20px;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 5px 5px 15px rbga(0, 0, 0, 0.3);
+    gap: 20px;
     justify-content: center;
-}
-
-.add-book-form div {
-    padding: 20px;
-}
-
-.add-book-form button {
-    margin: 30px;
+    align-items: center;
 }
 
 .add-book-form h2 {
     text-align: center;
-    margin: 20px;
 }
 
-.display_book {
+.book_info {
+    max-width: 500px;
+    margin-bottom: 20px;
     display: grid;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-left: 10px solid black;
+}
+
+
+.book_info div {
+    margin: 0px 20px 20px 20px;
+}
+
+.book_info div:first-child {
+    margin-top: 40px;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.input-div label {
+    margin-right: 10px;           
+    width: 100px;                 
+}
+
+.input-div input {
+    padding: 8px;                 
+    width: 300px;                 
+}
+
+.input-div input[type="checkbox"] {
+    width: auto;                  
+}
+
+.book_info button {
+    max-width: 100px;
+    margin: 0px 200px 40px 200px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #991b1b;
+    color: white;
+    width: 96px;
+    height: 32px;
+    border: 2px none;
+    border-radius: 20px;
+}
+
+.book_info label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.book_info input {
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fca5a5;
+    padding-right: 100px;
+}
+
+.display-book {
+    display: grid;
+    gap: 20px;
+}
+
+.display-book h2 {
+    text-align: center;
+}
+
+.display-book table{
+    border: 2px solid;
+    border-collapse: collapse;
+    width: 1200px;
+    text-align: center;
+}
+
+.display-book th, td {
+    border: 2px solid;
+    height: 64px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.display-book thead{
+    background-color: #991b1b;
+    color: white;
+}
+
+
+.display-book button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #991b1b;
+    color: white;
+    width: 96px;
+    height: 48px;
+    border: 2px none;
+    border-radius: 20px;
 }

@@ -10,20 +10,20 @@
     <h1>Library App</h1>
     <div class="add-book-form">
         <h2>Add Book</h2>
-        <form action="get" id="book_info">
-            <div>
+        <form action="get" id="book_info" class="book_info">
+            <div class="input-div">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" required>
             </div>
-            <div>
+            <div class="input-div">
                 <label for="author">Author</label>
                 <input type="text" name="author" id="author" required>
             </div>
-            <div>
+            <div class="input-div">
                 <label for="pages">Pages</label>
                 <input type="number" name="pages" id="pages">
             </div>
-            <div>
+            <div class="input-div">
                 <label for="read">Have read?</label>
                 <input type="checkbox" name="read" id="read">
             </div>
@@ -39,6 +39,7 @@
                     <th>Author</th>
                     <th>Pages</th>
                     <th>Have Read ?</th>
+                    <th>Change</th>
                     <th>Remove</th>
                 </tr>
             </thead>
