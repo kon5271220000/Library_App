@@ -1,4 +1,4 @@
-const myLibrary = []
+
 class Book {
     constructor(name, author, pages, read){
         this.name = name
